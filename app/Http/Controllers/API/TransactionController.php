@@ -46,11 +46,16 @@ class TransactionController extends Controller
         );
     }
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+
     public function checkout(Request $request)
     {
         $request->validate([
             'items' => 'required|array',
-            'items.*.id' => 'exists:products,id',
+            'items.id' => 'exists:products,id',
             'total_price' => 'required',
             'shipping_price' => 'required',
             'status' => 'required|in:PENDING,SUCCESS,CANCELLED,FAILED,SHIPPING,SHIPPED'
