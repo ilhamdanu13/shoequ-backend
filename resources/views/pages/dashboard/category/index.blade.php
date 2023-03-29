@@ -30,7 +30,7 @@
     <div class="py-12">
         <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="mb-10">
-                 <a href="{{ route('dashboard.category.index') }}" class="px-4 py-2 font-bold text-white bg-red-500 rounded shadow-lg hover:bg-red-700">+ Create Category</a>
+                 <a href="{{ route('dashboard.category.create') }}" class="px-4 py-2 font-bold text-white bg-red-500 rounded shadow-lg hover:bg-red-700">+ Create Category</a>
             </div>
             <div class="mt-10 overflow-hidden shadow sm:rounded-md">
                 <div class="px-4 py-5 bg-white sm:p-6">
